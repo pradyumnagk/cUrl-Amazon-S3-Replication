@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type"
+ content="text/html; charset=iso-8859-1">
+  <title>Template</title>
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+<script>
+function myFunction1()
+{
+	alert("Your data is being restored onto your local system");
+}
+</script>
+</head>
+
+<body>
+<div class="wrapper">
+<div class="main">
+<div class="header">
+<div class="banner-1">&nbsp;</div>
+</div>
+<div>
+<div align="center"><img src="../images/logo.jpg" alt="logo" align="" height="80px" width="150px"></img></div><br/>	
+<center>    
+<form action="http://localhost:8000/cgi-bin/GetData.py" method="post">
+
+<table border=0 width=500px height=350px cellspacing=1 cellpadding=1 bgcolor=#9aa5ae cols=2>
+<tr><td colspan=2 align=center><h2>Amazon S3 Configuration</h2></td></tr>
+<tr><td align="center" style="font-weight: bold;">Save To:</td><td><input type="text" name="filepath"> </input></td></tr>
+<tr><td align="center" style="font-weight: bold;">Access Key:</td><td><input type="text" name="accessKey"> </input></td></tr>
+<tr><td align="center" style="font-weight: bold;">Secret Key:</td><td><input type="text" name="secretKey"> </input></td></tr>
+<tr><td align="center" style="font-weight: bold;">Bucket Name:</td><td><input type="text" name="bucketName"> </input></td></tr>
+<tr><td align="center" style="font-weight: bold;">S3 File URL:</td><td><input type="text" name="fileUrl"> </input></td></tr>
+
+
+</table>
+<br/>
+<input type="button" value="" class="imgClass1"  onclick="location.href='Grid.html'" />
+<input type="submit" value="" class="imgClass2" onclick="myFunction1();"/>
+<input type="reset" value="" class="imgClass3"  />
+
+
+</form>
+</center>
+</div>
+
+
+</div>
+</body>
+</html>
